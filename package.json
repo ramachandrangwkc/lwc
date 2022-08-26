@@ -1,0 +1,28 @@
+{
+  "name": "lwc-standalone-playground",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ./src/server.js --ignore ./public",
+    "build": "rollup -c",
+    "copyAssets": "node scripts/copyAssets.js",
+    "postinstall": "yarn copyAssets"
+  },
+  "dependencies": {
+    "@lwc/compiler": "1.7.7",
+    "@lwc/engine": "1.7.7",
+    "@lwc/rollup-plugin": "1.7.7",
+    "@lwc/synthetic-shadow": "1.7.7",
+    "@lwc/wire-service": "1.7.7",
+    "@salesforce-ux/design-system": "^2.12.2",
+    "express": "4.17.1",
+    "lightning-base-components": "1.8.1-alpha",
+    "rollup": "2.21.0",
+    "rollup-plugin-replace": "2.2.0"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "devDependencies": {
+    "fs-extra": "^9.0.1"
+  }
+}
